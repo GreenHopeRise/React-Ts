@@ -1,5 +1,9 @@
+import Count from "./Count"
+import ObjectArray from "./ObjectArray"
 import ProductCard from "./ProductCard"
 import User from "./User"
+
+
 
 
 function App() {
@@ -9,6 +13,8 @@ function App() {
     <>
     <User name="Khalid" age={25} />
     <ProductCard title="Car" price={1000} inStock= {true}/>
+    <Count/>
+    <ObjectArray/>
       
     </>
   )
