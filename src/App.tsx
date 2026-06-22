@@ -1,3 +1,4 @@
+import Lesson1 from "./Cool/Lesson1"
 import Count from "./Count"
 import InputElement from "./InputElement"
 import ObjectArray from "./ObjectArray"
@@ -19,6 +20,7 @@ function App() {
     <ObjectArray/>
     <InputElement/>
     <T2/>
+    <Lesson1 name="Khalid" age={24}/>
       
     </>
   )
