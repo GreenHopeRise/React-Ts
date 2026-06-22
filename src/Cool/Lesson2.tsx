@@ -1,19 +1,36 @@
 import { useState } from "react";
 
 type User = {
-    name: string;
-    age: number;
-}
+  name: string;
+  age: number;
+};
 
+const Count = () => {
+  const [count, setCount] = useState<number>(0);
 
+  const [user, setUser] = useState<User>({
+    name: "khalid",
+    age: 4,
+  });
 
-const Lesson2 = () => {
-    const [user, setUser] = useState<User | null>(null)
+  const handleCount = () => {
+    setCount(count + 1);
+
+    setUser({
+      name: "robi",
+      age: 5,
+    });
+  };
+
   return (
     <div>
-        
-    </div>
-  )
-}
+      <p>{count}</p>
+      <p>{user.name}</p>
+      <p>{user.age}</p>
 
-export default Lesson2
+      <button onClick={handleCount}>Increase</button>
+    </div>
+  );
+};
+
+export default Count;
